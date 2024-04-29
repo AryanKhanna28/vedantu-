@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,93 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+
+/* MyTableComponent.css */
+
+/* General table styling */
+table {
+  width: 90%; /* Reduced width */
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  border: 2px solid black; /* Black border */
+  margin-bottom: 20px; /* Add margin at the bottom */
+  margin-left: 20px; /* Add left margin */
+}
+
+/* Table header styling */
+th {
+  padding: 8px 12px; /* Reduced padding */
+  text-align: left;
+  background-color: #ffa53d; /* Vedantu orange */
+  color: #333; /* Black for better contrast */
+  font-weight: bold;
+  border-bottom: 2px solid #ff7e00; /* Vedantu darker orange */
+  border-right: 1px solid black; /* Border between header cells */
+}
+
+/* Table body row styling */
+tr {
+  border-bottom: 1px solid #000000;
+}
+
+/* Table body cell styling */
+td {
+  padding: 8px 12px; /* Reduced padding */
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid black; /* Border between cells */
+  background-color: #f4f6f7; /* Light sky blue */
+}
+
+/* Highlighted row styling */
+tr:hover {
+  background-color: #f4f6f7; /* Light blue */
+}
+
+/* Input field styling */
+input[type='text'] {
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  margin-left: 19px; /* Add left margin */
+  margin-top: 10px; /* Add top margin */
+}
+
+/* Placeholder text color */
+input[type='text']::placeholder {
+  color: #aaa;
+}
+
+/* No data message styling */
+.no-data-message {
+  font-style: italic;
+  color: #888;
+}
+
+
+
+
+.nav{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid rgb(244, 242, 242);
+  padding-bottom: 10px;
+}
+
+.call{
+  display: flex;
+
+}
+
+.nav_button{
+  display:flex;
+  flex-direction: row;
+  gap:  100%;
+  justify-content: space-around;
+  position: relative;
+  left: -70px;
 }

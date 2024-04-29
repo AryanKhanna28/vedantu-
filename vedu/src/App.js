@@ -1,16 +1,24 @@
-import React from 'react';
-import MyTableComponent from './component/MyTableComponent.jsx'; // Assuming the component file is named MyTableComponent.js
+import React, { useState } from 'react';
+import Header from './component/Header.jsx';
+import Home from './component/Home.jsx';
+import Analysis from './component/Analysis.jsx';
 import Data from './utils/data.json'
 
-const App = () => {
-  // console.log(Data);
+function App() {
+  const [activeComponent, setActiveComponent] = useState('home');
+
+  const handleButtonClick = (component) => {
+    setActiveComponent(component);
+  };
+
   return (
-  
     <div>
-      <h1>My Table</h1>
-      <MyTableComponent data={Data} />
+      <Header onButtonClick={handleButtonClick} />
+      {activeComponent === 'home' && <Home />}
+      {activeComponent === 'analysis' && <Analysis data={Data}/>}
     </div>
   );
-};
+}
 
 export default App;
+
