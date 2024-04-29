@@ -1,0 +1,262 @@
+[
+    {
+      "year": 2023,
+      "data": [
+        {
+          "stage": 1,
+          "value": {
+            "Integers": 1,
+            "Fractions and decimal": 0,
+            "Data Handling": 1,
+            "Simple Equations": 0,
+            "Lines and Angles": 0,
+            "The Triangle and its Properties": 2,
+            "Congruence of Triangles": 0,
+            "Comparing Quantities": 5,
+            "Rational Numbers": 0,
+            "Practical Geometry": 0,
+            "Perimeter and Area": 0,
+            "Exponents and Powers": 1,
+            "Symmetry": 0,
+            "Visualising Solid Shapes": 0,
+            "Linear Equations in One Variable": 1,
+            "Understanding Quadrilaterals": 0,
+            "Squares and Square Roots": 1,
+            "Cubes and Cube Roots": 0,
+            "Algebraic Expressions and Identities": 2,
+            "Mensuration": 2,
+            "Direct and Inverse Proportions": 0,
+            "Factorisation": 0,
+            "Introduction to Graphs": 0,
+            "Playing with Number": 9,
+            "Not Related to any topic": 5
+          }
+        },
+        {
+          "stage": 2,
+          "value": {
+            "Integers": 0,
+            "Fractions and decimal": 0,
+            "Data Handling": 0,
+            "Simple Equations": 0,
+            "Lines and Angles": 0,
+            "The Triangle and its Properties": 2,
+            "Congruence of Triangles": 0,
+            "Comparing Quantities": 0,
+            "Rational Numbers": 0,
+            "Practical Geometry": 0,
+            "Perimeter and Area": 0,
+            "Exponents and Powers": 0,
+            "Symmetry": 0,
+            "Visualising Solid Shapes": 0,
+            "Linear Equations in One Variable": 0,
+            "Understanding Quadrilaterals": 1,
+            "Squares and Square Roots": 0,
+            "Cubes and Cube Roots": 0,
+            "Algebraic Expressions and Identities": 2,
+            "Mensuration": 0,
+            "Direct and Inverse Proportions": 0,
+            "Factorisation": 0,
+            "Introduction to Graphs": 0,
+            "Playing with Number": 0,
+            "Not Related to any topic": 3
+          }
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "data": [
+        {
+          "stage": 1,
+          "value": {
+            "Integers": 2,
+            "Fractions and decimal": 0,
+            "Data Handling": 1,
+            "Simple Equations": 0,
+            "Lines and Angles": 0,
+            "The Triangle and its Properties": 3,
+            "Congruence of Triangles": 0,
+            "Comparing Quantities": 6,
+            "Rational Numbers": 0,
+            "Practical Geometry": 0,
+            "Perimeter and Area": 0,
+            "Exponents and Powers": 2,
+            "Symmetry": 0,
+            "Visualising Solid Shapes": 0,
+            "Linear Equations in One Variable": 1,
+            "Understanding Quadrilaterals": 0,
+            "Squares and Square Roots": 2,
+            "Cubes and Cube Roots": 0,
+            "Algebraic Expressions and Identities": 2,
+            "Mensuration": 2,
+            "Direct and Inverse Proportions": 0,
+            "Factorisation": 0,
+            "Introduction to Graphs": 0,
+            "Playing with Number": 8,
+            "Not Related to any topic": 4
+          }
+        },
+        {
+          "stage": 2,
+          "value": {
+            "Integers": 0,
+            "Fractions and decimal": 0,
+            "Data Handling": 0,
+            "Simple Equations": 0,
+            "Lines and Angles": 0,
+            "The Triangle and its Properties": 2,
+            "Congruence of Triangles": 0,
+            "Comparing Quantities": 0,
+            "Rational Numbers": 0,
+            "Practical Geometry": 0,
+            "Perimeter and Area": 0,
+            "Exponents and Powers": 0,
+            "Symmetry": 0,
+            "Visualising Solid Shapes": 0,
+            "Linear Equations in One Variable": 0,
+            "Understanding Quadrilaterals": 1,
+            "Squares and Square Roots": 0,
+            "Cubes and Cube Roots": 0,
+            "Algebraic Expressions and Identities": 2,
+            "Mensuration": 0,
+            "Direct and Inverse Proportions": 0,
+            "Factorisation": 0,
+            "Introduction to Graphs": 0,
+            "Playing with Number": 0,
+            "Not Related to any topic": 3
+          }
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "data": [
+        {
+          "stage": 1,
+          "value": {
+            "Integers": 1,
+            "Fractions and decimal": 0,
+            "Data Handling": 0,
+            "Simple Equations": 0,
+            "Lines and Angles": 0,
+            "The Triangle and its Properties": 4,
+            "Congruence of Triangles": 0,
+            "Comparing Quantities": 3,
+            "Rational Numbers": 1,
+            "Practical Geometry": 0,
+            "Perimeter and Area": 0,
+            "Exponents and Powers": 2,
+            "Symmetry": 0,
+            "Visualising Solid Shapes": 0,
+            "Linear Equations in One Variable": 1,
+            "Understanding Quadrilaterals": 1,
+            "Squares and Square Roots": 1,
+            "Cubes and Cube Roots": 0,
+            "Algebraic Expressions and Identities": 1,
+            "Mensuration": 2,
+            "Direct and Inverse Proportions": 0,
+            "Factorisation": 0,
+            "Introduction to Graphs": 0,
+            "Playing with Number": 8,
+            "Not Related to any topic": 0
+          }
+        },
+        {
+          "stage": 2,
+          "value": {
+            "Integers": 1,
+            "Fractions and decimal": 0,
+            "Data Handling": 0,
+            "Simple Equations": 0,
+            "Lines and Angles": 0,
+            "The Triangle and its Properties": 1,
+            "Congruence of Triangles": 0,
+            "Comparing Quantities": 0,
+            "Rational Numbers": 2,
+            "Practical Geometry": 0,
+            "Perimeter and Area": 0,
+            "Exponents and Powers": 0,
+            "Symmetry": 0,
+            "Visualising Solid Shapes": 0,
+            "Linear Equations in One Variable": 0,
+            "Understanding Quadrilaterals": 0,
+            "Squares and Square Roots": 0,
+            "Cubes and Cube Roots": 0,
+            "Algebraic Expressions and Identities": 1,
+            "Mensuration": 2,
+            "Direct and Inverse Proportions": 0,
+            "Factorisation": 0,
+            "Introduction to Graphs": 0,
+            "Playing with Number": 0,
+            "Not Related to any topic": 1
+          }
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "data": [
+        {
+          "stage": 1,
+          "value": {
+            "Integers": 1,
+            "Fractions and decimal": 2,
+            "Data Handling": 0,
+            "Simple Equations": 0,
+            "Lines and Angles": 0,
+            "The Triangle and its Properties": 0,
+            "Congruence of Triangles": 0,
+            "Comparing Quantities": 3,
+            "Rational Numbers": 0,
+            "Practical Geometry": 1,
+            "Perimeter and Area": 2,
+            "Exponents and Powers": 0,
+            "Symmetry": 0,
+            "Visualising Solid Shapes": 0,
+            "Linear Equations in One Variable": 0,
+            "Understanding Quadrilaterals": 0,
+            "Squares and Square Roots": 1,
+            "Cubes and Cube Roots": 0,
+            "Algebraic Expressions and Identities": 3,
+            "Mensuration": 0,
+            "Direct and Inverse Proportions": 1,
+            "Factorisation": 0,
+            "Introduction to Graphs": 0,
+            "Playing with Number": 0,
+            "Not Related to any topic": 16
+          }
+        },
+        {
+          "stage": 2,
+          "value": {
+            "Integers": 1,
+            "Fractions and decimal": 0,
+            "Data Handling": 0,
+            "Simple Equations": 0,
+            "Lines and Angles": 0,
+            "The Triangle and its Properties": 1,
+            "Congruence of Triangles": 0,
+            "Comparing Quantities": 0,
+            "Rational Numbers": 2,
+            "Practical Geometry": 0,
+            "Perimeter and Area": 0,
+            "Exponents and Powers": 0,
+            "Symmetry": 0,
+            "Visualising Solid Shapes": 0,
+            "Linear Equations in One Variable": 0,
+            "Understanding Quadrilaterals": 0,
+            "Squares and Square Roots": 0,
+            "Cubes and Cube Roots": 0,
+            "Algebraic Expressions and Identities": 1,
+            "Mensuration": 2,
+            "Direct and Inverse Proportions": 0,
+            "Factorisation": 0,
+            "Introduction to Graphs": 0,
+            "Playing with Number": 0,
+            "Not Related to any topic": 1
+          }
+        }
+      ]
+    }
+  ]
