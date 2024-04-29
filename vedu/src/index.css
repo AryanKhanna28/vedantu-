@@ -35,10 +35,10 @@ table {
 th {
   padding: 8px 12px; /* Reduced padding */
   text-align: left;
-  background-color: #ffa53d; /* Vedantu orange */
-  color: #333; /* Black for better contrast */
+  background-color: #ff693d; /* Vedantu orange */
+  color: #ffffff; /* Black for better contrast */
   font-weight: bold;
-  border-bottom: 2px solid #ff7e00; /* Vedantu darker orange */
+  border-bottom: 2px solid #000000; /* Vedantu darker orange */
   border-right: 1px solid black; /* Border between header cells */
 }
 
@@ -104,3 +104,27 @@ input[type='text']::placeholder {
   position: relative;
   left: -70px;
 }
+
+
+
+h3{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.home-conatiner{
+  width: 90vw;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.tables{
+  margin: 10px auto;
+  display: block;
+}
+
+li{
+  margin-left: 40px;
+}
+
+

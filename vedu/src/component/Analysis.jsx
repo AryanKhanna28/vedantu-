@@ -3,8 +3,8 @@ import { useTable, useGlobalFilter } from 'react-table';
 // import './Analysis.css'
 
 const Analysis = ({ data = [] }) => {
-  const [searchInput, setSearchInput] = useState('');
   const [searchTopic, setSearchTopic] = useState('');
+  const [selectedYear, setSelectedYear] = useState('');
   const [filteredColumns, setFilteredColumns] = useState([]);
 
   // Check if data is not empty
@@ -48,7 +48,6 @@ const Analysis = ({ data = [] }) => {
   const columns = useMemo(() => {
     if (!hasData) return [];
 
-    const stage1Exists = data.some(({ data }) => data[0] && data[0].value);
     const initialColumns = [
       { Header: 'Topic', accessor: 'topic', show: true }, // Always show the "Topic" column
       ...allYears.flatMap((year) =>[
@@ -63,21 +62,21 @@ const Analysis = ({ data = [] }) => {
     if (!hasData) return;
 
     const newFilteredColumns = columns.map((column) => {
-      if (column.Header.toLowerCase().includes(searchInput.toLowerCase()) || column.show) {
+      if (column.Header.includes(selectedYear) || column.show) {
         return { ...column, show: true };
       }
       return { ...column, show: false };
     });
 
     setFilteredColumns(newFilteredColumns);
-  }, [searchInput, columns, hasData]);
-
-  const handleSearch = (event) => {
-    setSearchInput(event.target.value);
-  };
+  }, [selectedYear, columns, hasData]);
 
   const handleTopicSearch = (event) => {
     setSearchTopic(event.target.value);
+  };
+
+  const handleYearChange = (event) => {
+    setSelectedYear(event.target.value);
   };
 
   const {
@@ -102,8 +101,13 @@ const Analysis = ({ data = [] }) => {
 
   return (
     <div>
-      <input type="text" value={searchInput} onChange={handleSearch} placeholder="Search Year..." />
       <input type="text" value={searchTopic} onChange={handleTopicSearch} placeholder="Search Topics..." />
+      <select value={selectedYear} onChange={handleYearChange}>
+        <option value="">All Years</option>
+        {allYears.map((year) => (
+          <option key={year} value={year}>{year}</option>
+        ))}
+      </select>
       <table {...getTableProps()} >
         <thead>
           {headerGroups.map((headerGroup) => (
@@ -145,4 +149,3 @@ const Analysis = ({ data = [] }) => {
 };
 
 export default Analysis;
-

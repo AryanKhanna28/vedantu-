@@ -21,10 +21,12 @@ const Header = ({ onButtonClick }) => {
         </div>
         <div className='nav_button'>
             <button onClick={() => onButtonClick('home')}
-            style={{ fontWeight: '500',fontSize: '14px',lineHeight: '28px',letterSpacing: '.2px',color: 'orange'}}>
+            style={{ fontWeight: '500',fontSize: '14px',lineHeight: '28px',letterSpacing: '.2px',color: 'white',backgroundColor:"#ff693d",marginTop:"8px",border
+            :"4px",borderRadius:"4px",padding:"0 6px"}}>
             Home</button>
             <button onClick={() => onButtonClick('analysis')}
-            style={{ fontWeight: '500',fontSize: '14px',lineHeight: '28px',letterSpacing: '.2px',color: 'orange'}}>
+            style={{ fontWeight: '500',fontSize: '14px',lineHeight: '28px',letterSpacing: '.2px',color: 'white',backgroundColor:"#ff693d",marginTop:"8px",border
+            :"4px",borderRadius:"4px",padding:"0 6px"}}>
             Analysis</button>
         </div>
     </nav>
