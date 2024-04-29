@@ -3,16 +3,19 @@ import React from 'react';
 
 function Exams() {
   return (
-    <>
+    <div className='exam-main'>
+        <ul><li>
         <p>These are some alternative exams and competitions for students in the same age group as those 
         participating in the NMTC Sub-Junior exam in India. Each of these competitions offers a unique 
         platform for students to develop their mathematical skills and compete at various levels.</p>
+        </li></ul>    
+        
 
         <table className="exam-table" style={{marginTop:"30px"}}>
       <thead>
         <tr>
           <th>Exam Name</th>
-          <th>Organizing Organization</th>
+          <th>Exam Organizer</th>
         </tr>
       </thead>
       <tbody>
@@ -25,12 +28,12 @@ function Exams() {
           <td>Indian Association of Physics Teachers (IAPT) and Homi Bhabha Centre for Science Education (HBCSE) on behalf of the National Board for Higher Mathematics (NBHM)</td>
         </tr>
         <tr>
-          <td>Mathematical Olympiad for Girls (MOG)</td>
-          <td>Various educational institutions and organizations in India</td>
+          <td>Aryabhatta Mathematics Competition (AMC)</td>
+          <td>Mathematical Association of India (MAI)</td>
         </tr>
         <tr>
-          <td>International Mathematics and Science Olympiad (IMSO)</td>
-          <td>Singapore Asia Publishers (SAP) and International Science and Math Association (ISMA)</td>
+          <td>Unified Talent Search Examination (UTSE)</td>
+          <td>Indian Talent Olympiad (ITO)</td>
         </tr>
         <tr>
           <td>Science Olympiad Foundation (SOF) Mathematics Olympiad</td>
@@ -40,23 +43,22 @@ function Exams() {
           <td>Mathematics Talent Search Examination (MTSE)</td>
           <td>Conducted by different organizations and educational bodies in various states in India</td>
         </tr>
-        <tr>
-          <td>Indian National Junior Science Olympiad (INJSO)</td>
-          <td>Homi Bhabha Centre for Science Education (HBCSE) on behalf of the National Board for Higher Mathematics (NBHM)</td>
-        </tr>
       </tbody>
     </table>
     <br /><br /><br />
 
+    <ul><li>
     <p>Now there are some competitions that offer a diverse range of mathematical challenges and opportunities 
     for students to engage with peers from around the World. They promote mathematical talent and problem-
     solving skills in students of the same age group as those participating in the NMTC Sub-Junior exam.</p>
+    </li></ul>
+    
 
-    <table className="exams-table" style={{marginTop:"30px"}}>
+    <table className="exam-table" style={{marginTop:"30px"}}>
       <thead>
         <tr>
           <th>Exam Name</th>
-          <th>Organizing Organization</th>
+          <th>Exam Organizer</th>
         </tr>
       </thead>
       <tbody>
@@ -77,20 +79,12 @@ function Exams() {
           <td>Mathematical Association of America (MAA)</td>
         </tr>
         <tr>
-          <td>International Mathematics Competition (IMC)</td>
-          <td>Hosting country's organizing committee (varies by year)</td>
-        </tr>
-        <tr>
           <td>European Girls' Mathematical Olympiad (EGMO)</td>
           <td>EGMO Committee</td>
         </tr>
-        <tr>
-          <td>International Mathematical Olympiad for Girls (IMOg)</td>
-          <td>Hosting country's organizing committee (varies by year)</td>
-        </tr>
       </tbody>
     </table>
-    </>
+    </div>
 
     
   );

@@ -100,9 +100,9 @@ const Analysis = ({ data = [] }) => {
   }
 
   return (
-    <div>
+    <div className='analysis-main'>
       <input type="text" value={searchTopic} onChange={handleTopicSearch} placeholder="Search Topics..." />
-      <select value={selectedYear} onChange={handleYearChange}>
+      <select value={selectedYear} onChange={handleYearChange} className='select'>
         <option value="">All Years</option>
         {allYears.map((year) => (
           <option key={year} value={year}>{year}</option>
