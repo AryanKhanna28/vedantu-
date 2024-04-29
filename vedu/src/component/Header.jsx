@@ -28,6 +28,10 @@ const Header = ({ onButtonClick }) => {
             style={{ fontWeight: '500',fontSize: '14px',lineHeight: '28px',letterSpacing: '.2px',color: 'white',backgroundColor:"#ff693d",marginTop:"8px",border
             :"4px",borderRadius:"4px",padding:"0 6px"}}>
             Analysis</button>
+            <button onClick={() => onButtonClick('exams')}
+            style={{ fontWeight: '500',fontSize: '14px',lineHeight: '28px',letterSpacing: '.2px',color: 'white',backgroundColor:"#ff693d",marginTop:"8px",border
+            :"4px",borderRadius:"4px",padding:"0 6px"}}>
+            Exams</button>
         </div>
     </nav>
   )

@@ -99,12 +99,13 @@ input[type='text']::placeholder {
 .nav_button{
   display:flex;
   flex-direction: row;
-  gap:  100%;
   justify-content: space-around;
-  position: relative;
-  left: -70px;
+  gap: 30px;
 }
 
+button{
+  cursor: pointer;;
+}
 
 
 h3{
