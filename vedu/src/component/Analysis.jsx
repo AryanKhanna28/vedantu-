@@ -1,6 +1,6 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import { useTable, useGlobalFilter } from 'react-table';
-import { Pie } from 'react-chartjs-2'; // Import Pie component from react-chartjs-2
+import { Pie, Line } from 'react-chartjs-2'; // Import Pie component from react-chartjs-2
 import Chart from 'chart.js/auto'; // Import the entire Chart.js library
 // import './Analysis.css'
 
@@ -54,8 +54,8 @@ const Analysis = ({ data = [] }) => {
     const initialColumns = [
       { Header: 'Topic', accessor: 'topic', show: true, className: 'topic-header' }, // Always show the "Topic" column
       ...allYears.flatMap((year) =>[
-        { Header: `${year}\n(Stage 1)`, accessor: `${year}_Stage1`, show: false },
-        { Header: `${year}\n (Stage 2)`, accessor: `${year}_Stage2`, show: false }
+        { Header: `${year}(S1)`, accessor: `${year}_Stage1`, show: false },
+        { Header: `${year}(S2)`, accessor: `${year}_Stage2`, show: false }
       ]),
     ];
     return initialColumns;
@@ -123,6 +123,8 @@ const Analysis = ({ data = [] }) => {
     const chartLabels = Object.keys(topicsData);
     const chartValues = Object.values(topicsData);
 
+
+
     return {
       labels: chartLabels,
       datasets: [
@@ -157,6 +159,14 @@ const Analysis = ({ data = [] }) => {
     return <div>No data available</div>;
   }
   console.log(chartData, "152")
+
+  const options = {
+    plugins: {
+      legend: {
+        display: false
+      }
+    }
+};
 
   return (
     <div className='analysis-main'>
@@ -203,12 +213,26 @@ const Analysis = ({ data = [] }) => {
           })}
         </tbody>
       </table>
-      {selectedYear && chartData && (
-        <div className="pie-chart-container"  style={{ width :'750px',height : '800px' ,margin:"20px auto"}}>
-          <h2 style={{textAlign:'center'}}>Pie Chart for {selectedYear}</h2>
-          <Pie data={chartData} />
-        </div>
-      )}
+
+      {selectedYear && chartData ? (
+  <div className="charts-container">
+    <div className="pie-chart-container">
+      <Pie data={chartData} options={options} />
+    </div>
+    <div className="line-chart-container">
+      <Line data={chartData} options={options} />
+    </div>
+  </div>
+) : (
+  <div className='chart-empty-container'>
+    <div className='chart-empty'><p style={{textAlign:'center'}}>Select Year to see Analysis</p> </div>
+    <div className='chart-empty'>Select Year to see Analysis</div>
+  </div>
+)}
+
+      
+
+      
     </div>
   );
 };

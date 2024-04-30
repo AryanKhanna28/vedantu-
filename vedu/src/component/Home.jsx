@@ -6,7 +6,7 @@ import Picture3 from  '../image/Picture3.png'
 const Home = () => {
   return (
     <>
-        <h3><u>NMTC -Sub-Junior</u> </h3>
+        <h2>NMTC -Sub-Junior</h2>
         <h3><u> National Mathematics Talent Contest - Sub-Junior</u></h3>
         <br />
         <div className='home-conatiner'>
@@ -79,7 +79,7 @@ const Home = () => {
         <br />
         <br />
 
-        <h4>Stage-2 or Final Test</h4>
+        <ul><h4>Stage-2 or Final Test</h4>
         <li>Only the candidates selected at the preliminary level can appear for the final.</li>
         <li>	It is 3-hours test of subjective type questions reflecting the syllabi of PRMO, RMO, INMO and 
         IMO. The final examination will be held in their respective Institutions. AMTI will send the question 
@@ -90,9 +90,10 @@ const Home = () => {
         Answer sheets (un-ruled only, preferably A4 size) for the Final test have to be supplied by the 
         respective schools.</li>
         <li>	 The date and time of the examination cannot be altered by the centers on any account.</li>
-
+        </ul>
         <br />
-        <h4>NMTC Registration</h4>
+
+        <ul><h4>NMTC Registration</h4>
         <li>	The official website of NMTC is the only place where students can register for the exam. 
         Once they are done with their registrations, the system will generate the school ID and it will be 
         automatically sent to the corresponding school for reference. </li>
@@ -101,12 +102,15 @@ const Home = () => {
         <li>	The registration fee is 150/- per candidate which is directly paid to AMTI through online mode.</li>
         <li>	Once the payment is done, the system will generate a 13 digit registration number which will 
         be sent to the Active Email and Mobile number of the students.</li>
+        </ul>
         <br />
-        <h4>NMTC 2023-24: Awards</h4>
+
+        <ul><h4>NMTC 2023-24: Awards</h4>
         <li>	The Top 3 winners get cash awards & merit certificates.</li>
         <li>	1st position receives Rs.5000/-, 2nd will get Rs.3000/- and 3rd is awarded Rs. 2000/-.</li>
         <li>Students who are selected at the final levels are additionally awarded merit certificates and 
         token cash, depending on their maturity in mathematics. </li>
+        </ul>
 
         </div>
     </>

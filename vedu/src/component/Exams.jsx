@@ -3,8 +3,8 @@ import React from 'react';
 
 function Exams() {
   return (
-    <div className='exam-main'>
-        <ul><li>
+    <div className='exam-main' >
+        <ul style={{ marginLeft:"15px", marginRight:"14px"}}><li>
         <p>These are some alternative exams and competitions for students in the same age group as those 
         participating in the NMTC Sub-Junior exam in India. Each of these competitions offers a unique 
         platform for students to develop their mathematical skills and compete at various levels.</p>
@@ -45,9 +45,9 @@ function Exams() {
         </tr>
       </tbody>
     </table>
-    <br /><br /><br />
+    <br /><br />
 
-    <ul><li>
+    <ul style={{ marginLeft:"15px", marginRight:"25px"}}><li>
     <p>Now there are some competitions that offer a diverse range of mathematical challenges and opportunities 
     for students to engage with peers from around the World. They promote mathematical talent and problem-
     solving skills in students of the same age group as those participating in the NMTC Sub-Junior exam.</p>

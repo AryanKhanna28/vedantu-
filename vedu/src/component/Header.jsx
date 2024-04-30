@@ -10,6 +10,10 @@ const Header = ({ onButtonClick }) => {
         <img src="https://www.vedantu.com/cdn/images/new-header/img/vedantu-logo.svg" alt="vadantu" />
         
         <div className='nav_button'>
+            <button onClick={() => onButtonClick('home')}>Home</button>
+            <button onClick={() => onButtonClick('analysis')}>Analysis</button>
+            <button onClick={() => onButtonClick('exams')}>Exams</button>
+
             <div className='call'> 
                 <div className="Header_headerPhoneIcon__3JDrA" style={{position:'relative', top:'10px', left:'-8px'}}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 16 16" fill="#01202B">
@@ -21,18 +25,6 @@ const Header = ({ onButtonClick }) => {
                     <span style={{fontWeight: '600', fontSize: '14px'}}>1800-120-456-456</span>
                 </div>
             </div>
-            <button onClick={() => onButtonClick('home')}
-            style={{ fontWeight: '500',fontSize: '14px',lineHeight: '28px',letterSpacing: '.2px',color: 'white',backgroundColor:"#ff693d",marginTop:"8px",border
-            :"4px",borderRadius:"4px",padding:"0 6px"}}>
-            Home</button>
-            <button onClick={() => onButtonClick('analysis')}
-            style={{ fontWeight: '500',fontSize: '14px',lineHeight: '28px',letterSpacing: '.2px',color: 'white',backgroundColor:"#ff693d",marginTop:"8px",border
-            :"4px",borderRadius:"4px",padding:"0 6px"}}>
-            Analysis</button>
-            <button onClick={() => onButtonClick('exams')}
-            style={{ fontWeight: '500',fontSize: '14px',lineHeight: '28px',letterSpacing: '.2px',color: 'white',backgroundColor:"#ff693d",marginTop:"8px",border
-            :"4px",borderRadius:"4px",padding:"0 6px"}}>
-            Exams</button>
         </div>
     </nav>
   )
