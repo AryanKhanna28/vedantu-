@@ -204,8 +204,8 @@ const Analysis = ({ data = [] }) => {
         </tbody>
       </table>
       {selectedYear && chartData && (
-        <div className="pie-chart-container">
-          <h2>Pie Chart for {selectedYear}</h2>
+        <div className="pie-chart-container"  style={{ width :'750px',height : '800px' ,margin:"20px auto"}}>
+          <h2 style={{textAlign:'center'}}>Pie Chart for {selectedYear}</h2>
           <Pie data={chartData} />
         </div>
       )}
