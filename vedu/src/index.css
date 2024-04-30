@@ -31,10 +31,6 @@ table {
   margin-left: 5px; /* Add left margin */
 }
 
-/* table[role="table"] th:first-child {
-  width: 185px !important; 
- 
-} */
 
 /* Apply styles to all th elements except the first one */
 
@@ -90,7 +86,7 @@ tr:hover {
   margin-left: 10px;
   margin-top: 20px; 
   width:125px
-} */ */
+} 
 
 
 /* No data message styling */
