@@ -1,6 +1,6 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import { useTable, useGlobalFilter } from 'react-table';
-import { Pie, Line } from 'react-chartjs-2'; // Import Pie component from react-chartjs-2
+import { Pie, Line, Bar } from 'react-chartjs-2'; // Import Pie component from react-chartjs-2
 import Chart from 'chart.js/auto'; // Import the entire Chart.js library
 // import './Analysis.css'
 
@@ -228,7 +228,7 @@ const Analysis = ({ data = [] }) => {
         <Pie data={chartData} options={options} />
       </div>
       <div className="line-chart-container">
-        <Line data={chartData} options={options} />
+        <Bar data={chartData} options={options} />
       </div>
     </div>
   ) : (
