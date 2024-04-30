@@ -4,7 +4,14 @@ import React from 'react';
 function Exams() {
   return (
     <div className='exam-main' >
-        <ul style={{ marginLeft:"15px", marginRight:"14px"}}><li>
+      <div style={{textAlign:'center',  }}>
+        <h2>Exams</h2>
+        <p style={{padding :"0 9px 0 23px", fontSize:"1.1em"}}>Explore a world of mathematical challenges with NMTC Sub-Junior exams in India, alongside similar 
+        exhilarating competitions worldwide, offering young minds a platform to unleash their problem-solving 
+        prowess and mathematical ingenuity</p>
+      </div>
+
+        <ul style={{ marginLeft:"15px", marginRight:"14px" , marginTop:"40px"}}><li>
         <p>These are some alternative exams and competitions for students in the same age group as those 
         participating in the NMTC Sub-Junior exam in India. Each of these competitions offers a unique 
         platform for students to develop their mathematical skills and compete at various levels.</p>

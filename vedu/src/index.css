@@ -68,18 +68,17 @@ tr:hover {
 }
 
 /* Input field styling */
-input[type='text'] {
+ input[type='text'] {
   padding: 8px 12px;
   margin-bottom: 10px;
   border: 1px solid #000000;
-  border-radius: 4px;
-  margin-left: 300px; 
+  border-radius: 4px; 
   margin-top: 20px; 
   width:250px
 }
 
 /* Placeholder text color */
-input[type='text']::placeholder {
+ input[type='text']::placeholder {
   color: #616060;
 }
 
@@ -88,10 +87,10 @@ input[type='text']::placeholder {
   margin-bottom: 10px;
   border: 1px solid #000000;
   border-radius: 4px;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-top: 20px; 
   width:125px
-}
+} */ */
 
 
 /* No data message styling */
@@ -106,7 +105,7 @@ input[type='text']::placeholder {
 .nav{
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid rgb(244, 242, 242);
+  border-bottom: 2px solid rgb(204, 202, 202);
   padding-bottom: 10px;
   padding-right: 70px;
   padding-left: 70px;
@@ -209,40 +208,47 @@ li{
 
 
 .charts-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns */
-  gap: 200px; /* Gap between columns */
-  width: 500px;
-  height: 200px;
-  margin-left: 100px;
+  display: flex;
+  /* text-align: center; */
+  justify-content: space-between;
+  width: 93%;
+  padding: 10px;
+  margin-bottom: 40px;
 }
 
 .pie-chart-container,
 .line-chart-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 45%;
+  height: 350px;
   padding: 20px;
-  background-color: #f8f7f7;
-  border-radius: 8px;
+  /* background-color: #6f6d6d; */
+  border: 2px solid #878787;
+  box-shadow: 2px 2px 2px 2px rgb(0,0,0,0.6);
+  
 }
 
 .chart-empty-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns */
-  gap: 50px; /* Gap between columns */
-  
-  /* height: 200px; */
-  margin-left: 100px;
-  margin-bottom: 20px;
+  display: flex;
+  /* text-align: center; */
+  justify-content: space-between;
+  width: 93%;
+  padding: 10px;
+  margin-bottom: 40px;
 }
 
 .chart-empty{
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  width: 300px;
-  height: 250px;
+  width: 45%;
+  height: 350px;
   padding: 20px;
-  background-color: #f8f7f7;
-  border-radius: 8px;
+  /* background-color: #6f6d6d; */
+  border: 2px solid #878787;
+  box-shadow: 2px 2px 2px 2px rgb(0,0,0,0.6);
 }
 
 
