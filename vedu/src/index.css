@@ -219,8 +219,8 @@ li{
   justify-content: space-between; /* Center horizontally */
   align-items: center; /* Center vertically */
   width: 45%;
-  height: 350px;
-  padding: 20px;
+  height: 370px;
+  padding: 20px 10px 30px 10px ;
   /* background-color: #6f6d6d; */
   border: 2px solid #878787;
   box-shadow: 2px 2px 2px 2px rgb(0,0,0,0.6);
