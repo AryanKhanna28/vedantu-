@@ -1,11 +1,14 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import { useTable, useGlobalFilter } from 'react-table';
+import { Pie } from 'react-chartjs-2'; // Import Pie component from react-chartjs-2
+import Chart from 'chart.js/auto'; // Import the entire Chart.js library
 // import './Analysis.css'
 
 const Analysis = ({ data = [] }) => {
   const [searchTopic, setSearchTopic] = useState('');
   const [selectedYear, setSelectedYear] = useState('');
   const [filteredColumns, setFilteredColumns] = useState([]);
+  const [chartData, setChartData] = useState(null); // State to hold pie chart data
 
   // Check if data is not empty
   const hasData = data && data.length > 0;
@@ -94,10 +97,66 @@ const Analysis = ({ data = [] }) => {
     return rows.filter(row => row.original.topic.toLowerCase().includes(searchTopic.toLowerCase()));
   }, [rows, searchTopic]);
 
+  // Function to generate pie chart data based on selected year
+  const generateChartData = (selectedYear) => {
+    const topicsData = {}; // Object to hold topic data for the selected year
+
+    // Iterate through data to collect topic counts for the selected year
+    
+    data.forEach(({ year, data }) => {
+      console.log(data,selectedYear,"108");
+      if ( selectedYear === 'All Years' || year == selectedYear ) {
+        data.forEach(({ value }) => {
+          Object.entries(value).forEach(([topic, topicValue]) => {
+            topicsData[topic] = (topicsData[topic] || 0) + topicValue;
+          });
+        });
+      }
+
+    });
+
+    // Convert topicsData object to chart data format
+    if (Object.keys(topicsData).length === 0) {
+      console.log("No data found for the selected year");
+      return null;
+    }
+    const chartLabels = Object.keys(topicsData);
+    const chartValues = Object.values(topicsData);
+
+    return {
+      labels: chartLabels,
+      datasets: [
+        {
+          label: 'Topics',
+          data: chartValues,
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.6)',
+            'rgba(54, 162, 235, 0.6)',
+            'rgba(255, 206, 86, 0.6)',
+            'rgba(75, 192, 192, 0.6)',
+            'rgba(153, 102, 255, 0.6)',
+            'rgba(255, 159, 64, 0.6)',
+            // Add more colors if needed
+          ],
+          borderWidth: 1,
+        },
+      ],
+    };
+  };
+
+  // Update chart data when selected year changes
+  useEffect(() => {
+    if (selectedYear) {
+      const data = generateChartData(selectedYear);
+      setChartData(data);
+    }
+  }, [selectedYear]);
+
   // Render table only if data is available
   if (!hasData) {
     return <div>No data available</div>;
   }
+  console.log(chartData, "152")
 
   return (
     <div className='analysis-main'>
@@ -144,6 +203,12 @@ const Analysis = ({ data = [] }) => {
           })}
         </tbody>
       </table>
+      {selectedYear && chartData && (
+        <div className="pie-chart-container">
+          <h2>Pie Chart for {selectedYear}</h2>
+          <Pie data={chartData} />
+        </div>
+      )}
     </div>
   );
 };
