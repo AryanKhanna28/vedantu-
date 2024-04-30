@@ -10,7 +10,7 @@ import ExamTable from './ExamTable'
 const Home = () => {
   return (
     <>
-        <h2>NMTC -Sub-Junior</h2>
+        <h2 style={{marginTop:'30px'}}>NMTC -Sub-Junior</h2>
         <h3><u> National Mathematics Talent Contest - Sub-Junior</u></h3>
         <br />
         <div className='home-conatiner'>
@@ -32,7 +32,10 @@ const Home = () => {
         <p style={{marginBottom:'15px'}}>Here you go with the further details,</p>
 
         {/* <img className='tables' src={Picture1} alt="" /> */}
-        <CompetitionTable/>
+        <div style={{marginLeft: '50px'}}>
+          <CompetitionTable/>
+        </div>
+        
         <br />
         <br />
         <h4>FEES </h4>
@@ -43,7 +46,10 @@ const Home = () => {
         <br />
         <h4>NMTC - SUB JUNIOR Syllabus for Class 7th & 8th</h4>
         {/* <img className='tables' src={Picture2} alt="" /> */}
-        <MathTable/>
+        <div style={{marginLeft: '50px'}}>
+          <MathTable/>
+        </div>
+        
         <br />
         <br />
         <ul><h4>MODE OF EXAMINATION</h4>
@@ -83,7 +89,10 @@ const Home = () => {
         </ul>
         <br />
         {/* <img className='tables' src={Picture3} alt="" /> */}
-        <ExamTable/>
+        <div style={{marginLeft: '50px'}}>
+          <ExamTable/>
+        </div>
+        
         <br />
         <br />
 

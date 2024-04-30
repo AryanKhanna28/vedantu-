@@ -170,7 +170,7 @@ const Analysis = ({ data = [] }) => {
 
   return (
     <div className='analysis-main'>
-      <div style={{textAlign:'center', width:'93%', display:'flex' ,justifyContent:'center', alignItems:'center', flexDirection:'column' }}>
+      <div style={{textAlign:'center', width:'93%', display:'flex' ,justifyContent:'center', alignItems:'center', flexDirection:'column', marginTop:'20px'}}>
         <h2>Analysis</h2>
         <p style={{fontSize:"14px", width:'60%', color:'#878787'}}>Unlock the secrets to success in the NMTC Sub-Junior exam with our comprehensive analysis spanning 
         four years. Discover invaluable insights, strategies, and trends to excel in this competitive journey 
