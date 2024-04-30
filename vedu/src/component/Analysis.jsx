@@ -170,13 +170,13 @@ const Analysis = ({ data = [] }) => {
 
   return (
     <div className='analysis-main'>
-      <div style={{textAlign:'center', width:'93%'  }}>
+      <div style={{textAlign:'center', width:'93%', display:'flex' ,justifyContent:'center', alignItems:'center', flexDirection:'column' }}>
         <h2>Analysis</h2>
-        <p style={{fontSize:"1.1em"}}>Unlock the secrets to success in the NMTC Sub-Junior exam with our comprehensive analysis spanning 
+        <p style={{fontSize:"14px", width:'60%', color:'#878787'}}>Unlock the secrets to success in the NMTC Sub-Junior exam with our comprehensive analysis spanning 
         four years. Discover invaluable insights, strategies, and trends to excel in this competitive journey 
         towards mathematical excellence.</p>
       </div>
-      <div style={{textAlign:'center', marginTop:'10px', marginBottom:'15px'}}>
+      <div style={{width:'93%', textAlign:'center', marginTop:'10px', marginBottom:'15px'}}>
       <input type="text" value={searchTopic} onChange={handleTopicSearch} placeholder="Search Topics..." />
       <select value={selectedYear} onChange={handleYearChange} className='select'>
         <option value="">All Years</option>
@@ -225,9 +225,11 @@ const Analysis = ({ data = [] }) => {
   {selectedYear && chartData ? (
     <div className="charts-container">
       <div className="pie-chart-container">
+        <p>Pie Chart</p>
         <Pie data={chartData} options={options} />
       </div>
       <div className="line-chart-container">
+        <p>Bar Chart</p>
         <Bar data={chartData} options={options} />
       </div>
     </div>
@@ -236,11 +238,7 @@ const Analysis = ({ data = [] }) => {
     <div className='chart-empty'><p style={{textAlign:'center'}}>Select Year to see Analysis</p> </div>
     <div className='chart-empty'>Select Year to see Analysis</div>
   </div>
-)}
-
-      
-
-      
+)}    
     </div>
   );
 };

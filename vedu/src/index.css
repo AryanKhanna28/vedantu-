@@ -215,7 +215,8 @@ li{
 .pie-chart-container,
 .line-chart-container {
   display: flex;
-  justify-content: center; /* Center horizontally */
+  flex-direction: column;
+  justify-content: space-between; /* Center horizontally */
   align-items: center; /* Center vertically */
   width: 45%;
   height: 350px;

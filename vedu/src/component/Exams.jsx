@@ -4,9 +4,9 @@ import React from 'react';
 function Exams() {
   return (
     <div className='exam-main' >
-      <div style={{textAlign:'center',  }}>
+      <div style={{textAlign:'center', display:'flex' ,justifyContent:'center', alignItems:'center', flexDirection:'column' , marginTop:'-10px'}}>
         <h2>Exams</h2>
-        <p style={{padding :"0 9px 0 23px", fontSize:"1.1em"}}>Explore a world of mathematical challenges with NMTC Sub-Junior exams in India, alongside similar 
+        <p style={{padding :"0 9px 0 23px", fontSize:"14px", width:'60%', color:'#878787'}}>Explore a world of mathematical challenges with NMTC Sub-Junior exams in India, alongside similar 
         exhilarating competitions worldwide, offering young minds a platform to unleash their problem-solving 
         prowess and mathematical ingenuity</p>
       </div>

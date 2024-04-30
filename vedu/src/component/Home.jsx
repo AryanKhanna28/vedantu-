@@ -2,6 +2,10 @@ import React from 'react'
 import Picture1 from  '../image/Picture1.png'
 import Picture2 from  '../image/Picture2.png'
 import Picture3 from  '../image/Picture3.png'
+import CompetitionTable from './CompetitionTable'
+import MathTable from './MathTable'
+import ExamTable from './ExamTable'
+
 
 const Home = () => {
   return (
@@ -25,8 +29,10 @@ const Home = () => {
         <h4>NMTC 2023-24: Eligibility Criteria </h4>
         <p>All math lovers who are in schools, junior colleges of all boards, degree colleges and 
         technological institutions in India can take part in it.</p>
-        <p>Here you go with the further details,</p>
-        <img className='tables' src={Picture1} alt="" />
+        <p style={{marginBottom:'15px'}}>Here you go with the further details,</p>
+
+        {/* <img className='tables' src={Picture1} alt="" /> */}
+        <CompetitionTable/>
         <br />
         <br />
         <h4>FEES </h4>
@@ -36,7 +42,8 @@ const Home = () => {
         claim can be made by the institution for any type of expenses).</p>
         <br />
         <h4>NMTC - SUB JUNIOR Syllabus for Class 7th & 8th</h4>
-        <img className='tables' src={Picture2} alt="" />
+        {/* <img className='tables' src={Picture2} alt="" /> */}
+        <MathTable/>
         <br />
         <br />
         <ul><h4>MODE OF EXAMINATION</h4>
@@ -75,7 +82,8 @@ const Home = () => {
         Hall Ticket for the final examination.</li>
         </ul>
         <br />
-        <img className='tables' src={Picture3} alt="" />
+        {/* <img className='tables' src={Picture3} alt="" /> */}
+        <ExamTable/>
         <br />
         <br />
 
