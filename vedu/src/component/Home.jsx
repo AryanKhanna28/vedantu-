@@ -10,8 +10,12 @@ import ExamTable from './ExamTable'
 const Home = () => {
   return (
     <>
+      <div  style={{textAlign:'center', display:'flex' ,justifyContent:'center', alignItems:'center', flexDirection:'column' }}>
         <h2 style={{marginTop:'30px'}}>NMTC -Sub-Junior</h2>
-        <h3><u> National Mathematics Talent Contest - Sub-Junior</u></h3>
+        <p style={{fontSize:"14px", width:'60%', color:'#878787'}}>Unlock your potential and conquer the NMTC Sub Junior Exam with precision and confidence.
+         Join us on a journey of mathematical exploration and mastery!</p>
+      </div>
+        
         <br />
         <div className='home-conatiner'>
         <h4>About NMTC Exam</h4>
