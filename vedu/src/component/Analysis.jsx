@@ -52,10 +52,10 @@ const Analysis = ({ data = [] }) => {
     if (!hasData) return [];
 
     const initialColumns = [
-      { Header: 'Topic', accessor: 'topic', show: true }, // Always show the "Topic" column
+      { Header: 'Topic', accessor: 'topic', show: true, className: 'topic-header' }, // Always show the "Topic" column
       ...allYears.flatMap((year) =>[
-        { Header: `${year} (Stage 1)`, accessor: `${year}_Stage1`, show: false },
-        { Header: `${year} (Stage 2)`, accessor: `${year}_Stage2`, show: false }
+        { Header: `${year}\n(Stage 1)`, accessor: `${year}_Stage1`, show: false },
+        { Header: `${year}\n (Stage 2)`, accessor: `${year}_Stage2`, show: false }
       ]),
     ];
     return initialColumns;

@@ -31,6 +31,13 @@ table {
   margin-left: 20px; /* Add left margin */
 }
 
+/* table[role="table"] th:first-child {
+  width: 185px !important; 
+ 
+} */
+
+/* Apply styles to all th elements except the first one */
+
 /* Table header styling */
 th {
   padding: 8px 12px; /* Reduced padding */
@@ -86,9 +93,11 @@ input[type='text']::placeholder {
 
 .nav{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   border-bottom: 2px solid rgb(244, 242, 242);
   padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .call{
