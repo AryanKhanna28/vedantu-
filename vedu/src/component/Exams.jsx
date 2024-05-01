@@ -44,7 +44,7 @@ function Exams() {
         </tr>
         <tr>
           <td>Mathematics Talent Search Examination (MTSE)</td>
-          <td>Conducted by different organizations and educational bodies in various states in India</td>
+          <td>Indian Institute for Studies in Mathematics (IISMA).</td>
         </tr>
       </tbody>
     </table>
