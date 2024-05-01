@@ -43,10 +43,6 @@ function Exams() {
           <td> Unison International School, Unison Institute</td>
         </tr>
         <tr>
-          <td>Science Olympiad Foundation (SOF) Mathematics Olympiad</td>
-          <td>Science Olympiad Foundation (SOF)</td>
-        </tr>
-        <tr>
           <td>Mathematics Talent Search Examination (MTSE)</td>
           <td>Conducted by different organizations and educational bodies in various states in India</td>
         </tr>
