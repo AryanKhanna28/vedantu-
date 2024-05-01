@@ -74,10 +74,6 @@ function Exams() {
           <td>Australian Mathematics Trust (AMT)</td>
         </tr>
         <tr>
-          <td>Math Kangaroo</td>
-          <td>Math Kangaroo Foundation</td>
-        </tr>
-        <tr>
           <td>International Kangaroo Mathematics Contest (IKMC)</td>
           <td>Kangourou sans Frontières (KSF)</td>
         </tr>
