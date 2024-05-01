@@ -35,7 +35,7 @@ function Exams() {
           <td>Indian Association of Physics Teachers (IAPT) and Homi Bhabha Centre for Science Education (HBCSE) on behalf of the National Board for Higher Mathematics (NBHM)</td>
         </tr>
         <tr>
-          <td>Aryabhatta Mathematics Competition (AMC)</td>
+          <td>Aryabhatta Mathematics Olympiad (AMO)</td>
           <td>Mathematical Association of India (MAI)</td>
         </tr>
         <tr>
