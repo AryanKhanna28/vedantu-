@@ -28,7 +28,7 @@ function Exams() {
       <tbody>
         <tr>
           <td>International Mathematics Olympiad (IMO)</td>
-          <td>International Mathematical Olympiad Foundation (IMOF)</td>
+          <td>Science Olympiad Foundation (SOF)</td>
         </tr>
         <tr>
           <td>Regional Mathematics Olympiad (RMO)</td>
@@ -69,6 +69,10 @@ function Exams() {
         </tr>
       </thead>
       <tbody>
+        <tr>
+          <td>International Mathematics Olympiad (IMO)</td>
+          <td>International Mathematical Olympiad Foundation (IMOF)</td>
+        </tr>
         <tr>
           <td>Australian Mathematics Competition (AMC)</td>
           <td>Australian Mathematics Trust (AMT)</td>
