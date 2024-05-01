@@ -40,7 +40,7 @@ function Exams() {
         </tr>
         <tr>
           <td>Unified Talent Search Examination (UTSE)</td>
-          <td>Indian Talent Olympiad (ITO)</td>
+          <td> Unison International School, Unison Institute</td>
         </tr>
         <tr>
           <td>Science Olympiad Foundation (SOF) Mathematics Olympiad</td>
