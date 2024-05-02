@@ -81,10 +81,6 @@ function Exams() {
           <td>American Mathematics Competitions (AMC)</td>
           <td>Mathematical Association of America (MAA)</td>
         </tr>
-        <tr>
-          <td>European Girls' Mathematical Olympiad (EGMO)</td>
-          <td>EGMO Committee</td>
-        </tr>
       </tbody>
     </table>
     </div>
